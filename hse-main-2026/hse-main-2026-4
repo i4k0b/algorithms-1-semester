@@ -1,0 +1,48 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+
+
+char
+*compress(char *str)
+{
+    int len = strlen(str);
+    char *result = (char *)malloc(len);
+    int i, j; i = 0; j = 0;
+    for (j; j < len; ++j)
+    {
+        if (isalpha(str[i]) && str[i+1] == '#')
+        {
+            switch(str[i])
+            {
+                case 'A' : result[j] = 'B'; break;
+                case 'B' : result[j] = 'C'; break;
+                case 'C' : result[j] = 'D'; break;
+                case 'D' : result[j] = 'E'; break;
+                case 'E' : result[j] = 'F'; break;
+                case 'F' : result[j] = 'G'; break;
+                case 'G' : result[j] = 'A'; break;
+                default: break;
+            }
+            i += 2;
+        }
+        else
+        {
+            result[j] = str[i];
+            i++;
+        }
+    }
+    result[len] = '\0';
+    return result;
+}
+
+
+int
+main(void)
+{
+    char *str = (char *)malloc(100);
+    scanf("%s", str);
+    printf("%s\n", compress(str));
+    return 0;
+}
