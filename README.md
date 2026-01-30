@@ -7,7 +7,7 @@ Vault of variants
 
 |    CMC-MSU    |    FCS-HSE    |
 | ------------- | ------------- |
-|    2012-1     | Content Cell  |
+|<a href="https://daniilshat.ru/" target="_blank">Daniil</a>    | Content Cell  |
 |    2012-2     | Content Cell  |
 |    2014-1     | Content Cell  |
 |    2014-2     | Content Cell  |
