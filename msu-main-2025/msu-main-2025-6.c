@@ -7,8 +7,19 @@ enum
     ALPHABET_NUM = 26,
     FIXED_LEN = 100
 };
-
 #define ALPHABET "abcdefghijklmnopqrstuvwxyz"
+char *generative(int seed);
+
+/*---------------------------------------------------------------------------*/
+
+int main(void)
+{
+    int n; scanf("%d", &n);
+    printf("%s\n", generative(n));
+    return 0;
+}
+
+/*---------------------------------------------------------------------------*/
 
 char *generative(int seed)
 {
@@ -43,11 +54,4 @@ char *generative(int seed)
     }
     strcat(strcat(first_var, " "), second_var); free(second_var);
     return first_var;
-}
-
-int main(void)
-{
-    int n; scanf("%d", &n);
-    printf("%s\n", generative(n));
-    return 0;
 }
