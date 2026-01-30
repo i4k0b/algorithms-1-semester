@@ -47,7 +47,7 @@ The tasks have been collected and partially restored over the past **14 years**.
 ---
 
 ## 🤝 Contributing
-Found an error or have additional materials? Feel free to:
+If you've found an error or had additional materials feel free to:
 1. Open an Issue
 2. Submit a Pull Request
 3. Contact the repository maintainer
