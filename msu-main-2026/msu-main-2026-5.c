@@ -3,6 +3,18 @@
 #include <string.h>
 #include <ctype.h>
 
+char *from_hex_to_bin(char *str);
+
+/*---------------------------------------------------------------------------*/
+
+int main(void)
+{
+    char *res = (char *)malloc(100);
+    scanf("%s", res); printf("%s\n", from_hex_to_bin(res)); free(res);
+    return 0;
+}
+
+/*---------------------------------------------------------------------------*/
 
 char *from_hex_to_bin(char *str)
 {
@@ -37,13 +49,4 @@ char *from_hex_to_bin(char *str)
     }
     result[len * 5 - 1] = '\0';
     return result;
-}
-
-
-
-int main(void)
-{
-    char *res = (char *)malloc(100);
-    scanf("%s", res); printf("%s\n", from_hex_to_bin(res)); free(res);
-    return 0;
 }
