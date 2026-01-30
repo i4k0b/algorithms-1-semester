@@ -12,7 +12,6 @@ The tasks have been collected and partially restored over the past **14 years**.
 
 ## 📁 Vault of Variants
 
-<div align="center">
   <table>
     <tr>
       <th>CMC-MSU</th>
@@ -91,9 +90,6 @@ The tasks have been collected and partially restored over the past **14 years**.
       <td>2026</td>
     </tr>
   </table
-
-
-</div>
 
 ---
 
