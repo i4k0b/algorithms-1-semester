@@ -29,7 +29,8 @@ char *collapse(char *s)
     char *token = strtok(s, " "),
          **strings = (char **)malloc(sizeof(char *) * len * 2),
          *result = (char *)malloc(sizeof(char) * len * 3);
-    while (token != NULL) {
+    while (token != NULL)
+    {
         strings[i++] = token;
         token = strtok(NULL, " ");
     }
