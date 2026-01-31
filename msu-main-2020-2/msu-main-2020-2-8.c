@@ -18,7 +18,7 @@ int main(void)
     fgets(str, LEN, stdin);
     str[99] = '\0';
     printf("%s\n", collapse(str));
-    return 0;
+    free(str); return 0;
 }
 
 /*-----------------------------------------------------------------*/
