@@ -44,5 +44,5 @@ main(void)
     char *str = (char *)malloc(100);
     scanf("%s", str);
     printf("%s\n", compress(str));
-    return 0;
+    free(str); return 0;
 }
