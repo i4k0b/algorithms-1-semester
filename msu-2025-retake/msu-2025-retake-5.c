@@ -3,10 +3,9 @@
 #include <string.h>
 
 const int MAX_LEN = 1000;
-
 char *cat_foo(const char **strings, int n);
 
-/*-----------------------------------------------------------*/
+/*------------------------------------------------------------------*/
 
 int main(void)
 {
@@ -17,7 +16,7 @@ int main(void)
     return 0;
 }
 
-/*-----------------------------------------------------------*/
+/*------------------------------------------------------------------*/
 
 char *cat_foo(const char **strings, int n)
 {
@@ -43,9 +42,3 @@ char *cat_foo(const char **strings, int n)
     strcat(new_result, strings[odd_index]);
     return new_result;
 }
-
-
-
-
-
-
